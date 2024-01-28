@@ -15,6 +15,7 @@
   --color-white: #ffffff;
   --bg-dark: #2a2b2f;
   --bg-darker: #18191a;
+  --gradient: linear-gradient(var(--bg-dark), var(--bg-darker));
 }
 
 html {
@@ -24,8 +25,9 @@ html {
 /* ================== Typography ================== */
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
@@ -38,12 +40,18 @@ ul {
 
 .txt-brand {
   color: var(--color-primary);
+  text-shadow: 0 0 30px var(--color-primary);
+}
+
+.txt-lead {
+  font-size: 18px;
 }
 
 /* ================== Layout ================== */
 
 .container {
-  max-width: 70rem;
+  max-width: 75rem;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -70,10 +78,11 @@ ul {
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .btn-primary:hover {
-  opacity: 0.8;
+  box-shadow: 0 0 20px var(--color-primary);
 }
 
 /* ================== Navbar ================== */
@@ -82,7 +91,7 @@ ul {
 }
 
 .navbar {
-  height: 70px;
+  height: 90px;
   align-items: center;
 }
 
@@ -109,3 +118,44 @@ ul {
 }
 
 /* ================== Navbar - end ================== */
+
+/* ================== Hero ================== */
+
+.hero {
+  height: calc(100vh - 90px);
+  background: var(--gradient);
+}
+
+.hero-content {
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-text h1 {
+  color: var(--color-white);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  color: var(--color-white);
+  opacity: 0.7;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 600px;
+}
+
+.hero-text button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.hero-img img {
+  width: 340px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* ================== Hero - end ================== */

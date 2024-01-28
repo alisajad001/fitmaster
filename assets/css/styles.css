@@ -59,3 +59,53 @@ ul {
 .justify-between {
   justify-content: space-between;
 }
+/* ================== Layout - end ================== */
+
+/* ================== Buttons ================== */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+/* ================== Navbar ================== */
+.header {
+  background-color: var(--bg-dark);
+}
+
+.navbar {
+  height: 70px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--color-white);
+}
+
+.navbar-list {
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-list li a {
+  color: var(--color-white);
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.navbar-list li a:hover {
+  color: var(--color-primary);
+}
+
+/* ================== Navbar - end ================== */

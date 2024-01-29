@@ -91,7 +91,7 @@ ul {
 }
 
 .btn-secondary {
-  border: 2px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
   color: var(--color-white);
   background: none;
   padding: 0.7rem 1rem;
@@ -310,7 +310,7 @@ ul {
 }
 
 .pricing-box {
-  width: 300px;
+  width: 290px;
   padding: 2rem 1.5rem;
   border-radius: 10px;
   background-color: rgb(61, 61, 61);
@@ -321,6 +321,7 @@ ul {
 .pricing-box:nth-child(2) {
   background: var(--pricing-gradient);
   height: 420px;
+  width: 320px;
 }
 
 .pricing-box:nth-child(2) button {

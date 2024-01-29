@@ -16,6 +16,7 @@
   --bg-dark: #1f2024;
   --bg-darker: #18191a;
   --gradient: linear-gradient(var(--bg-dark), var(--bg-darker));
+  --pricing-gradient: linear-gradient(45deg, var(--color-primary), #831515);
 }
 
 html {
@@ -87,6 +88,22 @@ ul {
 
 .btn-primary:hover {
   box-shadow: 0 0 20px var(--color-primary);
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-primary);
+  color: var(--color-white);
+  background: none;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
 }
 
 /* ================== Navbar ================== */
@@ -265,4 +282,104 @@ ul {
   background-color: var(--color-primary);
 }
 
-/* ================== Programs - start ================== */
+/* ================== Programs - end ================== */
+
+/* ================== Pricing - start ================== */
+#pricing {
+  background-color: var(--bg-dark);
+  height: 100vh;
+}
+
+.pricing-content {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  color: var(--color-white);
+}
+
+.pricing-text {
+  text-align: center;
+}
+
+.pricing-boxes {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  width: 300px;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  background-color: rgb(61, 61, 61);
+  transition: 0.3s;
+  position: relative;
+}
+
+.pricing-box:nth-child(2) {
+  background: var(--pricing-gradient);
+  height: 420px;
+}
+
+.pricing-box:nth-child(2) button {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  opacity: 0.7;
+}
+
+.pricing-box:nth-child(2) button:hover {
+  opacity: 1;
+}
+
+.pricing-box:hover {
+  transform: scale(1.05);
+}
+
+.pricing-box p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0.5rem 2rem;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  top: 0;
+}
+
+.pricing-box h3 {
+  text-align: center;
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.pricing-box .per-month {
+  font-size: 14px;
+}
+
+.pricing-box ul {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.pricing-box ul li::before {
+  content: "\2713";
+  padding-right: 0.7rem;
+}
+
+.pricing-box button {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* ================== Pricing - end ================== */

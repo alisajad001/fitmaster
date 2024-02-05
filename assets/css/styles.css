@@ -21,6 +21,20 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gradient);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
 }
 
 /* ================== Typography ================== */

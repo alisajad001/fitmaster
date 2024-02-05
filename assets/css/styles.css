@@ -388,7 +388,7 @@ ul {
 /* ================== Pricing - start ================== */
 #testmonials {
   background-color: var(--bg-darker);
-  height: 80vh;
+  height: 100vh;
 }
 
 #testmonials .container {
@@ -449,3 +449,13 @@ ul {
 }
 
 /* ================== Pricing - end ================== */
+
+/* ================== Footer - start ================== */
+.footer {
+  background-color: #ec2020;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  color: var(--color-white);
+  text-align: center;
+}
+/* ================== Footer - end ================== */

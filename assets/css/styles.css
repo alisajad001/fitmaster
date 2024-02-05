@@ -157,8 +157,8 @@ ul {
 /* ================== Hero ================== */
 
 .hero {
-  height: calc(100vh - 90px);
   background: var(--gradient);
+  padding: 5rem 0;
 }
 
 .hero-content {
@@ -198,7 +198,7 @@ ul {
 
 #about {
   background-color: var(--bg-dark);
-  height: 100vh;
+  padding: 5rem 0;
 }
 
 .about-content {
@@ -238,7 +238,7 @@ ul {
 
 #programs {
   background-color: var(--bg-darker);
-  height: 100vh;
+  padding: 5rem 0;
 }
 
 .programs-content {
@@ -261,7 +261,8 @@ ul {
 
 .programs-boxes {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .programs-box {
@@ -301,7 +302,7 @@ ul {
 /* ================== Pricing - start ================== */
 #pricing {
   background-color: var(--bg-dark);
-  height: 100vh;
+  padding: 5rem 0;
 }
 
 .pricing-content {
@@ -402,7 +403,7 @@ ul {
 /* ================== Pricing - start ================== */
 #testmonials {
   background-color: var(--bg-darker);
-  height: 100vh;
+  padding: 5rem 0;
 }
 
 #testmonials .container {
@@ -419,6 +420,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 }
 
@@ -473,3 +475,18 @@ ul {
   text-align: center;
 }
 /* ================== Footer - end ================== */
+
+/* ================== Responsive ================== */
+@media screen and (max-width: 1240px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .about-content {
+    gap: 4rem;
+  }
+
+  .about-content img {
+    width: 400px;
+  }
+}

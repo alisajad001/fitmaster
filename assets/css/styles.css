@@ -384,3 +384,68 @@ ul {
 }
 
 /* ================== Pricing - end ================== */
+
+/* ================== Pricing - start ================== */
+#testmonials {
+  background-color: var(--bg-darker);
+  height: 80vh;
+}
+
+#testmonials .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 3rem;
+  color: var(--color-white);
+}
+
+.testmonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testmonial-box {
+  background-color: var(--bg-dark);
+  padding: 1.4rem;
+  height: 280px;
+  width: 350px;
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff13;
+}
+
+.testmonial-box .testmonial-box_header {
+  gap: 1rem;
+  align-items: center;
+}
+
+.testmonial-box_header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.box_header-text h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.box_header-text p {
+  font-size: 0.8rem;
+  opacity: 0.4;
+}
+
+.testmonial-box_text {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.7;
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ================== Pricing - end ================== */
